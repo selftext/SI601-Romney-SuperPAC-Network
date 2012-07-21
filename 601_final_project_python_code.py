@@ -5,7 +5,8 @@ import urllib
 import xml.etree.ElementTree as ET
 
 #query LittleSis for xml output showing all donors to Romney's SuperPAC
-url = 'http://api.littlesis.org/entity/69678/relationships.xml?cat_id=5&_key=1b0a067953d4285315ec6e45d0ea9960af6e9933'
+#the API key has been removed for privacy
+url = 'http://api.littlesis.org/entity/69678/relationships.xml?cat_id=5&_key=[KEYREMOVED]'
 
 document = urllib.urlopen(url)
 tree = ET.parse(document)
